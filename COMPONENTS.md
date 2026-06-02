@@ -4,6 +4,34 @@ This boilerplate includes reusable React components that leverage the utility cl
 
 ## Components
 
+### WavesHeader
+
+A full-screen animated header with wave patterns and bouncing arrow.
+
+```jsx
+import { WavesHeader } from '@/app/components';
+
+<WavesHeader
+  title="Your Name"
+  subtitle="Your Tagline"
+/>
+```
+
+**Props:**
+- `title` (string) - Main heading text
+- `subtitle` (string) - Subtitle text
+
+**Features:**
+- Full-screen (100vw × 100vh)
+- Animated SVG wave effect
+- Responsive 3×3 grid that scales
+- Bouncing arrow indicator
+- Click to scroll functionality
+
+See [WAVES_HEADER.md](./WAVES_HEADER.md) for detailed documentation.
+
+---
+
 ### Navbar
 
 A responsive navigation bar component.
