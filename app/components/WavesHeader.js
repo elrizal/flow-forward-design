@@ -7,7 +7,7 @@ export default function WavesHeader({ title, subtitle }) {
 
   useEffect(() => {
     let frames = 0;
-    const rad = Math.PI / 180;
+    const rad = Math.PI / 200;
     let animationId;
 
     function freqAnimation() {
@@ -15,7 +15,7 @@ export default function WavesHeader({ title, subtitle }) {
 
       let bfx = 0.10;
       let bfy = 0.07;
-      frames += 0.3;
+      frames += 0.43;
       bfx += 0.001 * Math.cos(frames * rad);
       bfy += 0.005 * Math.sin(frames * rad);
 
@@ -50,7 +50,7 @@ export default function WavesHeader({ title, subtitle }) {
               id="displacement"
               in="SourceGraphic"
           
-              scale="190"
+              scale="290"
             />
           </filter>
         </defs>

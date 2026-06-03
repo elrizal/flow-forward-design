@@ -1,6 +1,6 @@
 'use client';
 
-import { Gallery, WavesHeader } from './components';
+import { Gallery, WavesHeader, ScrollReveal, CircleBackground } from './components';
 
 const galleryItems = [
   {
@@ -71,54 +71,68 @@ export default function Home() {
 
   return (
     <>
+      {/* Animated Circle Background */}
+      {/* <CircleBackground /> */}
+
       {/* Full-Screen Waves Header */}
-      <div onClick={scrollToGallery}>
+      <div onClick={scrollToGallery} data-section="0">
         <WavesHeader
           title="Flow Forward Design"
           subtitle="Creative Portfolio & Design Showcase"
         />
       </div>
+   <div className="container py-5" >
+         <section className="indiv-fade-in-up mb-5"> 
+                
+            <h2 className="text-center mb-4">Pop-ups</h2>
+        <ScrollReveal delay={200}>
+          <div className="d-flex flex-wrap gap-3 mb-5" data-section="2">
+            <div className="card flex-fill shadow-sm">
+              <div className="card-body">
+                <h3 className="card-title">October</h3>
+                <p className="card-text text-muted">
+                  LaRue, Water Tank
+                </p>
+              </div>
+            </div>
 
+
+            <div className="card flex-fill shadow-sm">
+              <div className="card-body">
+                <h3 className="card-title">November</h3>
+                <p className="card-text text-muted">
+                  LaRue, Water Tank
+                </p>
+              </div>
+            </div>
+
+            <div className="card flex-fill shadow-sm">
+              <div className="card-body">
+                <h3 className="card-title">December</h3>
+                <p className="card-text text-muted">
+                  LaRue, Water Tank
+                </p>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+</section> </div>
       {/* Gallery Section */}
-      <div id="gallery-section" className="container py-5">
-        <section className="mb-5">
-          <h2 className="text-center mb-4">Featured Gallery</h2>
-          <Gallery items={galleryItems} />
-        </section>
-
+      <div id="gallery-section" className="container py-5" data-section="1">
+        <section className="indiv-fade-in-up"> 
+        <ScrollReveal>
+          <section className="mb-5">
+            <h2 className="text-center mb-4">Showcase</h2>
+            <Gallery items={galleryItems} />
+          </section>
+        </ScrollReveal>
+        </section >
         {/* Feature Cards */}
-        <div className="d-flex flex-wrap gap-3 mb-5">
-          <div className="card flex-fill shadow-sm">
-            <div className="card-body">
-              <h3 className="card-title">Flexbox Utilities</h3>
-              <p className="card-text text-muted">
-                Full suite of flexbox utilities including direction, wrap, justify, align, and gap classes.
-              </p>
-            </div>
-          </div>
-
-          <div className="card flex-fill shadow-sm">
-            <div className="card-body">
-              <h3 className="card-title">Responsive Design</h3>
-              <p className="card-text text-muted">
-                Mobile-first responsive utilities with breakpoints: sm, md, lg, and xl.
-              </p>
-            </div>
-          </div>
-
-          <div className="card flex-fill shadow-sm">
-            <div className="card-body">
-              <h3 className="card-title">Bootstrap-like Classes</h3>
-              <p className="card-text text-muted">
-                Familiar class names for spacing, colors, typography, and more.
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/* Demo Section */}
-        <section className="bg-light rounded p-4 mb-5">
-          <h2 className="mb-4">Quick Examples</h2>
+        <ScrollReveal delay={300}>
+          <section className="bg-light rounded p-4 mb-5" data-section="3">
+            <h2 className="mb-4">Previous Events</h2>
 
           <div className="mb-4">
             <h4 className="mb-2">Flexbox Layout</h4>
@@ -157,10 +171,12 @@ export default function Home() {
               <div className="mt-3 pt-3 border-top">Margin top 3, Padding top 3</div>
             </div>
           </div>
-        </section>
+          </section>
+        </ScrollReveal>
 
         {/* Getting Started */}
-        <section>
+        <ScrollReveal delay={400}>
+          <section data-section="4">
           <h2 className="mb-3">Getting Started</h2>
           <div className="card">
             <div className="card-body">
@@ -188,7 +204,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
+        </ScrollReveal>
 
         {/* Footer */}
         <footer className="text-center mt-5 pt-5 border-top text-muted">
