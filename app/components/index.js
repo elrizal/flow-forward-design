@@ -6,3 +6,5 @@ export { default as Grid, GridItem } from './Grid';
 export { default as Modal } from './Modal';
 export { default as Gallery } from './Gallery';
 export { default as WavesHeader } from './WavesHeader';
+export { default as ScrollReveal } from './ScrollReveal';
+export { default as CircleBackground } from './CircleBackground';
