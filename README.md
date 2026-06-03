@@ -10,6 +10,7 @@ A Next.js boilerplate application with custom flexbox-based CSS utilities and Bo
 - **Flexbox-First** - Complete flexbox utility system
 - **Responsive Design** - Mobile-first with breakpoints (sm, md, lg, xl)
 - **No Framework Dependencies** - Pure CSS utilities
+- **Animated Waves Header** - Full-screen header with SVG wave animation
 - **Interactive Gallery Component** - 4-column responsive gallery with modals
 - **E-commerce Ready** - Built-in shop link integration (Etsy, Threadless)
 - **GitHub Deployment Ready** - Optimized for Vercel, Netlify, and other platforms
@@ -218,6 +219,7 @@ flow-forward-design/
 │   │   ├── Hero.js
 │   │   ├── Modal.js      # Modal component
 │   │   ├── Navbar.js
+│   │   ├── WavesHeader.js # Animated waves header
 │   │   └── index.js
 │   ├── globals.css       # All utility classes
 │   ├── layout.js         # Root layout
@@ -228,6 +230,7 @@ flow-forward-design/
 ├── COMPONENTS.md         # Component documentation
 ├── DEPLOYMENT.md         # Deployment guide
 ├── GALLERY.md           # Gallery component guide
+├── WAVES_HEADER.md      # Waves header component guide
 ├── package.json
 └── README.md
 ```
